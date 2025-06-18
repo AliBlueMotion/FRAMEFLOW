@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRONTCRAFT</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link class="theme" rel="stylesheet" href="css/style-dark.css">
+</head>
+<body>
+    <div class="wrapper">
+           <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo"><img src="images/logo.svg" alt=""></a>
+                <nav class="nav">
+                    <button class="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                <ul class="menu">
+                    <li class="menu__item"><a href="index.html#courses" class="menu__link">Курсы</a></li>
+                    <li class="menu__item"><a href="index.html#teachers" class="menu__link">Команда</a></li>
+
+                    <li class="menu__item"><a href="index.html#contacts" class="menu__link">Контакты</a></li>
+                    <li class="menu__item">
+                        <button class="theme-toggle" id="themeToggle">Сменить тему</button>
+                    </li>
+                    <li class="menu__item"> <button id="greetingBtn">Привет, друг!</button></li>
+                    
+                </ul>
+            </nav>
+            </div>
+            
+        </div>
+        </header>
+        <main class="main">
+               <div id="modal_1" data-modal>
+    <div class="modal-window">
+        <div class="card">
+            <div class="card-header">
+                Приветствуем в Frameflow!
+            </div>
+            <div class="card-body">
+                <input type="text" placeholder="Введите ваше имя" id="userNameInput">
+                <p style="color: #B0B0B0;">Обещаем не коммитить это в public repo</p>
+                <div style="text-align: center; margin: 20px 0;">
+                    <img src="images/shapes-2.png" alt="" style="max-width: 100px;">
+                </div>
+                <div style="display: flex; justify-content: center; gap: 15px;">
+                    <button data-modal-close data-action="save" type="button">Сохранить</button>
+                    <button data-modal-close data-action="close" type="button">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="modal_2" data-modal>
+    <div class="modal-window">
+        <div class="card">
+            <div class="card-body">
+                <img src="images/shapes.png" alt="">
+                <p class="yourresult">Твой результат - </p>
+                <button data-modal-close type="button">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+          <section class="quiz-container">
+                <div class="container">
+                    <div class="quiz-header">
+                        <h1 class="quiz-title">Тест по After Effects</h1>
+                        <p class="quiz-description">Проверьте свои знания инструментов и функций After Effects. Ответьте на 10 вопросов и узнайте свой уровень подготовки!</p>
+                    </div>
+                    
+                    <div class="quiz-content">
+                        <div id="quiz"></div>
+                        <div id="result"></div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+   <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <nav class="footer__menu">
+                    <a href="index.html" class="logo"><img src="images/logo.svg" alt=""></a>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><p class="footer__menu-title">Мы в социальных сетях</p></li>
+                            <ul class="social-media-list">
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">
+                                <img src="images/social_media/facebook.svg" alt="">
+                            </a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link"><img src="images/social_media/Youtube.svg" alt=""></a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link"><img src="images/social_media/Telegram.svg" alt=""></a>
+                            </li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link"> <img src="images/social_media/Telegram_channel.svg" alt=""></a>
+                            </li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link"><img src="images/social_media/vk.svg" alt=""></a>
+                            </li>
+                            </ul>
+                        </ul>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><p class="footer__menu-title">Документы</p></li>
+                            
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Условия использования</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Политика конфиденциальности</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Реферальное соглашение</a></li>
+                        </ul>
+
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><p class="footer__menu-title">Компания</p></li>
+
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a>
+                            </li>
+
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Вакансии</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Партнёрам</a></li>
+                        </ul>
+
+                       
+                    
+            
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    </div>
+   
+
+
+<script src="js/test-check.js"></script>
+<script src="js/main.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>

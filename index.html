@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRONTCRAFT</title>
+    <link rel="stylesheet" href="css/reset.css">
+     <link class="theme" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+         <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo"><img src="images/logo.svg" alt=""></a>
+                <nav class="nav">
+                    <button class="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#courses" class="menu__link">Курсы</a></li>
+                    <li class="menu__item"><a href="#teachers" class="menu__link">Команда</a></li>
+                    <li class="menu__item"><a href="test.html" class="menu__link">Тест</a></li>
+                    <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+                    <li class="menu__item">
+                        <button class="theme-toggle" id="themeToggle">Сменить тему</button>
+                    </li>
+                    <li class="menu__item"><button id="greetingBtn">Привет, друг!</button></li>
+                    
+                </ul>
+            </nav>
+            </div>
+            
+        </div>
+        </header>
+    <main class="main">
+   <!-- Модальное окно для ввода имени -->
+<div id="modal_1" data-modal>
+    <div class="modal-window">
+        <div class="card">
+            <div class="card-header">
+                Приветствуем в Frameflow!
+            </div>
+            <div class="card-body">
+                <input type="text" placeholder="Введите ваше имя">
+                <p>Обещаем не коммитить это в public repo</p>
+                <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+                    <button data-modal-close data-action="save" type="button">Сохранить</button>
+                    <button data-modal-close type="button">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для результатов теста -->
+<div id="modal_2" data-modal>
+    <div class="modal-window">
+        <div class="card">
+            <div class="card-body">
+                <img src="images/shapes.png" alt="">
+                <p class="yourresult">Твой результат - </p> <!-- Добавлен класс -->
+                <button data-modal-close type="button">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="banner">
+                        <div class="banner__text">
+                            <h1 class="title-hero">FrameFlow </h1>
+                            <p>Создавай цифровые миры  вместе с нами</p>
+                        <a class="banner-btn__choose" href="#courses">Выбрать курс</a> 
+                       <a class="banner-btn__test" href="test.html">Пройти тест</a>
+                       
+                        
+                        </div>
+                        <div class="banner__img"><img src="images/avatar_hero.png" alt=""></div>
+                    </div>
+                    
+                </div>
+                 <div class="info">
+                        <div class="info__item"> 
+                            <div class="info__item-text">
+                                <h4 class="item__title">Практика с 1-го дня</h4>
+                            <p>Минимум теории, максимум реальных задач и проектов.</p>
+                            </div>
+                            <div class=""><img src="images/shape-4.png" alt=""></div>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__item-text">
+                                 <h4 class="item__title">Ментор 1:1</h4>
+                            <p>Индивидуальная помощь и обратная связь по твоему коду</p>
+                            </div>
+                           <div class=""><img src="images/shape.png" alt=""></div>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__item-text">
+                                <h4 class="item__title">Сильное Сообщество</h4>
+                            <p>Поддержка сокурсников, общие чаты, нетворкинг и помощь 24/7</p>
+                            </div>
+                            <div class=""><img src="images/shape-3.png" alt=""></div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+       
+        <section class="courses" id="courses">
+            <div class="container">
+                <div class="courses__title"><h2 class=" ">Курсы для вашего развития</h2>
+                     <a href="#" class="">Больше курсов</a></div>
+                
+                <div class="courses__inner">
+                <div class="course course-1">
+                    <div class="course-descrp">
+                        <h4 class="course__title" style="margin-bottom: 10px;">Базовый Motion Design</h4>
+                        <p style="margin-bottom: 20px;">Освойте After Effects с нуля: анимация текста, создание простых инфографик и переходов. Ваш старт в моушен-дизайне за 4 недели</p>
+                    <a class="btn-more"  href="#">Подробнее</a>
+                    </div>
+                    <div class="course__img">
+                        <img src="images/course-1.png" alt="">
+                    </div>
+                </div>
+                <div class="course course-2">
+                    <div class="course-descrp">
+                    <h4 class="course__title" style="margin-bottom: 10px;">Графический Дизайн: Визуал для Соцсетей PRO</h4>
+                    <p style="margin-bottom: 20px;">Создавайте цепляющие сторис, посты и обложки в Figma/Photoshop. Типографика, композиция, цвет – ключевые навыки дизайнера контента</p><a class="btn-more" style="background-color: #E92700;" href="#">Подробнее</a>
+                    </div>
+                    <div class="course__img" style="margin-top: 200px; margin-left: 100px;">
+                        <img src="images/course-4.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="course course-3">
+                    <div class="course-descrp">
+                        <h4 class="course__title" style="margin-bottom: 10px;">Взрывной Моушен: 3D и Эффекты в After Effects</h4>
+                    <p style="margin-bottom: 20px;">Погружение в продвинутый AE: работа с 3D-слоями, частицами, сложной анимацией. Создавайте впечатляющие титры и динамичные сцены</p>
+                    <a class="btn-more" style="background-color: #F7BC0C;" href="#">Подробнее</a>
+                    </div>
+                    
+                </div>
+                <div class="course course-4">
+                    <div class="course-descrp">
+                        <h4 class="course__title" style="margin-bottom: 10px;">UI/UX Design: От основ до Pro</h4>
+                    <p style="margin-bottom: 20px;">Полный курс по созданию удобных и красивых интерфейсов. Изучите принципы UX, освойте Figma и научитесь создавать прототипы, которые решают задачи пользователей</p>
+                    <a class="btn-more" style="background-color: #2185E8;" href="#">Подробнее</a>
+                    </div>
+                    
+                    <div class="course__img" style="margin-left: 230px;">
+                        <img src="images/course-3.png" alt="">
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <section class="teachers" id="teachers">
+            <div class="container">
+                <h2 class="section__title">Наши менторы</h2>
+                <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+                <div class="teachers__inner">
+                    <div class="teacher">
+                        <h4>Руслан Колычев</h4>
+                        <p>Арт-директор</p>
+                        <img src="images/teacher-1.png" alt="">
+                    </div>
+                    <div class="teacher">
+                        <h4>Артем Новиков</h4>
+                        <p>Senior CG Artist</p>
+                        <img src="images/teacher-2.png" alt="">
+                    </div>
+                    <div class="teacher">
+                        <h4>Анна Смирнова</h4>
+                        <p>Моушен-дизайнер, аниматор</p>
+                        <img src="images/teacher-3.png" alt="">
+                    </div>
+                    <div class="teacher">
+                        <h4>Максим Дочин</h4>
+                        <p>Web & UX Designer</p>
+                        <img src="images/teacher-4.png" alt="">
+                    </div>
+
+                    <div class="teacher">
+                        <h4>Анна Смирнова</h4>
+                        <p>Моушен-дизайнер, аниматор</p>
+                        <img src="images/teacher-5.png" alt="">
+                    </div>
+                    <div class="teacher">
+                        <h4>Максим Дочин</h4>
+                        <p>Web & UX Designer</p>
+                        <img src="images/teacher-6.png" alt="">
+                    </div>
+                    <div class="teacher">
+                        <h4>Максим Дочин</h4>
+                        <p>Web & UX Designer</p>
+                        <img src="images/teacher-7.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <div class="partners__inner">
+                    <img src="images/heart.png" alt="">
+                    <p>Мы сотрудничаем с компаниями, которые готовы меняться сегодня, чтобы стать лидерами своей отрасли завтра</p>
+                </div>
+                
+            </div>
+            <div class="partners-marquee">
+        <div class="partners-marquee__inner">
+            <img src="images/partners.png" alt="Партнеры">
+            <img src="images/partners.png" alt="Партнеры">
+        </div>
+    </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2 class="section__title">
+                    Опыт наших студентов
+                </h2>
+                <div class="reviews__inner">
+                    <div class="review review-1">
+                        <div class="rating">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Duis a libero pulvinar cras. Eleifend morbi pretium pulvinar tincidunt scelerisque vivamus pulvinar. Ipsum magna posuere ut massa sit volutpat lectus orci. Sagittis sed amet elementum arcu lacus cursus. Lorem ipsum dolor sit amet consectetur. Duis a libero pulvinar cras. </p>
+                        <div class="review__user">
+                            <img src="images/user-review.png" alt="">
+                            <p class="user-name">John Devork</p>
+                        </div>
+                    </div>
+                    <div class="review review-2">
+                        <div class="rating">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Duis a libero pulvinar cras. Eleifend morbi pretium pulvinar tincidunt scelerisque vivamus pulvinar. Ipsum magna posuere ut massa sit volutpat lectus orci. Sagittis sed amet elementum arcu lacus cursus. Lorem ipsum dolor sit amet consectetur. Duis a libero pulvinar cras. </p>
+                        <div class="review__user">
+                            <img src="images/user-review.png" alt="">
+                            <p class="user-name">John Devork</p>
+                        </div>
+                    </div>
+                    <div class="review review-3">
+                        <div class="rating">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Duis a libero pulvinar cras. Eleifend morbi pretium pulvinar tincidunt scelerisque vivamus pulvinar. Ipsum magna posuere ut massa sit volutpat lectus orci. Sagittis sed amet elementum arcu lacus cursus. Lorem ipsum dolor sit amet consectetur. Duis a libero pulvinar cras. </p>
+                        <div class="review__user">
+                            <img src="images/user-review.png" alt="">
+                            <p class="user-name">John Devork</p>
+                        </div>
+                    </div>
+                    <div class="review review-4">
+                        <div class="rating">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                            <img src="images/star-fill.svg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Duis a libero pulvinar cras. Eleifend morbi pretium pulvinar tincidunt scelerisque vivamus pulvinar. Ipsum magna posuere ut massa sit volutpat lectus orci. Sagittis sed amet elementum arcu lacus cursus. Lorem ipsum dolor sit amet consectetur. Duis a libero pulvinar cras. </p>
+                        <div class="review__user">
+                            <img src="images/user-review.png" alt="">
+                            <p class="user-name">John Devork</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="test" >
+            <div class="container">
+                <h4 class="section__title">
+                    Тест: Основы Motion Design
+                </h4>
+                <p>
+                    Проверь знание After Effects! 10 вопросов по ключевым терминам и инструментам. <br> Узнай свой уровень за 5 минут.
+                </p>
+                <a class="btn" href="test.html">
+                    Пройти 
+                </a>
+            </div>
+        </section>
+        <div class="form-application">
+            <div class="container">
+                 <form action="" class="application">
+                    <h4 class="application__title">ЗАПИСЬ В МАСТЕРСКУЮ FRAMEFLOW</h4>
+                    <p>
+                        Наш менеджер свяжется с вами
+                    </p>
+                    <input type="text" placeholder="Имя*">
+                    <input type="tel" placeholder="Телефон*">
+                    <input type="email" placeholder="Электронная почта">
+                    <br>
+                    <button type="submit">Отправить</button>
+                 </form>
+            </div>
+       
+        </div>
+        
+
+    </main>
+
+
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer__inner">
+                <nav class="footer__menu">
+                    <a href="index.html" class="logo"><img src="images/logo.svg" alt=""></a>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><p class="footer__menu-title">Мы в социальных сетях</p></li>
+                            <ul class="social-media-list">
+                                <li class="footer__menu-item"><a href="#" class="footer__menu-link">
+                                <img src="images/social_media/facebook.svg" alt="">
+                            </a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link"><img src="images/social_media/Youtube.svg" alt=""></a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link"><img src="images/social_media/Telegram.svg" alt=""></a>
+                            </li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link"> <img src="images/social_media/Telegram_channel.svg" alt=""></a>
+                            </li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link"><img src="images/social_media/vk.svg" alt=""></a>
+                            </li>
+                            </ul>
+                        </ul>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><p class="footer__menu-title">Документы</p></li>
+                            
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Условия использования</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Политика конфиденциальности</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Реферальное соглашение</a></li>
+                        </ul>
+
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><p class="footer__menu-title">Компания</p></li>
+
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a>
+                            </li>
+
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Вакансии</a></li>
+                            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Партнёрам</a></li>
+                        </ul>
+
+                       
+                    
+            
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    </div>
+   <script src="js/slider.js"></script> 
+   <script src="js/test-check.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/theme.js"></script>
+   
+</body>
+</html>
